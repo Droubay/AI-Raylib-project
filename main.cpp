@@ -53,12 +53,7 @@ int main(void) {
         if (IsKeyDown(KEY_A)){
             bluePos.x -= 4.0f;
         }
-        if (IsKeyDown(KEY_S)){
-            bluePos.y += 1.5f;
-        }
-        if (IsKeyDown(KEY_W)){
-            bluePos.y -= 1.5f;
-        }
+        
         if (IsKeyPressed(KEY_SPACE)) {
             Projectile newProjectile = {{bluePos.x, bluePos.y}, {0, -5}};
             projectiles.push_back(newProjectile);
